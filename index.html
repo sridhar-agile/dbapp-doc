@@ -861,7 +861,7 @@ margin-bottom: 20px;
                       <article id="api-ActivityRetrieve-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>To retrieve data from activity</p>
+                          <p>Retrieves data from activity</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -869,7 +869,7 @@ margin-bottom: 20px;
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/activity/ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/activity/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -889,7 +889,7 @@ margin-bottom: 20px;
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-ActivityRetrieve-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/activity/ticket"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/activity/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-ActivityRetrieve-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -942,7 +942,7 @@ public class ActivityRetrieveApiExample {
 
 ActivityRetrieveApi *apiInstance = [[ActivityRetrieveApi alloc] init];
 
-// To retrieve data from activity
+// Retrieves data from activity
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -993,7 +993,7 @@ namespace Example
 
             try
             {
-                // To retrieve data from activity
+                // Retrieves data from activity
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -1049,7 +1049,7 @@ api_instance = swagger_client.ActivityRetrieveApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To retrieve data from activity
+    # Retrieves data from activity
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling ActivityRetrieveApi->get: %s\n" % e)</code></pre>
@@ -1120,7 +1120,7 @@ except ApiException as e:
                       <article id="api-BarChart-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>to achieve bar chart</p>
+                          <p>Retrieves the data according to bar chart</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -1204,7 +1204,7 @@ String *token = token_example; // an authorization header
 
 BarChartApi *apiInstance = [[BarChartApi alloc] init];
 
-// to achieve bar chart
+// Retrieves the data according to bar chart
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -1259,7 +1259,7 @@ namespace Example
 
             try
             {
-                // to achieve bar chart
+                // Retrieves the data according to bar chart
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -1318,7 +1318,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # to achieve bar chart
+    # Retrieves the data according to bar chart
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling BarChartApi->post: %s\n" % e)</code></pre>
@@ -1430,7 +1430,7 @@ $(document).ready(function() {
                       <article id="api-BulkUpdate-put-0" data-group="User" data-name="put" data-version="0">
                         <div class="pull-left">
                           <h1>put</h1>
-                          <p>To update multiple rows in single time</p>
+                          <p>Updates more than one record at a time</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -1438,7 +1438,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/multi/ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/multi/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -1458,7 +1458,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-BulkUpdate-put-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/multi/ticket"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/multi/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-BulkUpdate-put-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -1514,7 +1514,7 @@ String *token = token_example; // an authorization header
 
 BulkUpdateApi *apiInstance = [[BulkUpdateApi alloc] init];
 
-// To update multiple rows in single time
+// Updates more than one record at a time
 [apiInstance putWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -1569,7 +1569,7 @@ namespace Example
 
             try
             {
-                // To update multiple rows in single time
+                // Updates more than one record at a time
                 apiInstance.put(body, token);
             }
             catch (Exception e)
@@ -1628,7 +1628,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To update multiple rows in single time
+    # Updates more than one record at a time
     api_instance.put(body, token)
 except ApiException as e:
     print("Exception when calling BulkUpdateApi->put: %s\n" % e)</code></pre>
@@ -1740,7 +1740,7 @@ $(document).ready(function() {
                       <article id="api-CustomQueriesInsert-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>it will  get the results based on customQueryId which we pass dynamically in rest call</p>
+                          <p>Retrieves the results based on customQueryId which we pass dynamically in rest call</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -1748,7 +1748,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/cq/6</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/cq/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -1768,7 +1768,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-CustomQueriesInsert-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/cq/6"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/cq/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-CustomQueriesInsert-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -1824,7 +1824,7 @@ String *token = token_example; // an authorization header
 
 CustomQueriesInsertApi *apiInstance = [[CustomQueriesInsertApi alloc] init];
 
-// it will  get the results based on customQueryId which we pass dynamically in rest call
+// Retrieves the results based on customQueryId which we pass dynamically in rest call
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -1879,7 +1879,7 @@ namespace Example
 
             try
             {
-                // it will  get the results based on customQueryId which we pass dynamically in rest call
+                // Retrieves the results based on customQueryId which we pass dynamically in rest call
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -1938,7 +1938,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # it will  get the results based on customQueryId which we pass dynamically in rest call
+    # Retrieves the results based on customQueryId which we pass dynamically in rest call
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling CustomQueriesInsertApi->post: %s\n" % e)</code></pre>
@@ -2050,7 +2050,7 @@ $(document).ready(function() {
                       <article id="api-CustomQueriesRetrieve-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>it will  get the results based on customQueryId which we pass dynamically in rest call</p>
+                          <p>Retrieves the results based on customQueryId which we pass dynamically in rest call</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -2058,7 +2058,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/cq/19?query&#x3D;select * from ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/cq/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -2078,7 +2078,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-CustomQueriesRetrieve-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/cq/19?query&#x3D;select * from ticket"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/cq/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-CustomQueriesRetrieve-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2131,7 +2131,7 @@ public class CustomQueriesRetrieveApiExample {
 
 CustomQueriesRetrieveApi *apiInstance = [[CustomQueriesRetrieveApi alloc] init];
 
-// it will  get the results based on customQueryId which we pass dynamically in rest call
+// Retrieves the results based on customQueryId which we pass dynamically in rest call
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -2182,7 +2182,7 @@ namespace Example
 
             try
             {
-                // it will  get the results based on customQueryId which we pass dynamically in rest call
+                // Retrieves the results based on customQueryId which we pass dynamically in rest call
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -2238,7 +2238,7 @@ api_instance = swagger_client.CustomQueriesRetrieveApi()
 token = token_example # String | an authorization header
 
 try: 
-    # it will  get the results based on customQueryId which we pass dynamically in rest call
+    # Retrieves the results based on customQueryId which we pass dynamically in rest call
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling CustomQueriesRetrieveApi->get: %s\n" % e)</code></pre>
@@ -2309,7 +2309,7 @@ except ApiException as e:
                       <article id="api-CustomQueriesUpdate-put-0" data-group="User" data-name="put" data-version="0">
                         <div class="pull-left">
                           <h1>put</h1>
-                          <p>it will  get the results based on customQueryId which we pass dynamically in rest call</p>
+                          <p>Retrieves the results based on customQueryId which we pass dynamically in rest call</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -2317,7 +2317,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/cq/7</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/cq/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -2337,7 +2337,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-CustomQueriesUpdate-put-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/cq/7"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/cq/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-CustomQueriesUpdate-put-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2393,7 +2393,7 @@ String *token = token_example; // an authorization header
 
 CustomQueriesUpdateApi *apiInstance = [[CustomQueriesUpdateApi alloc] init];
 
-// it will  get the results based on customQueryId which we pass dynamically in rest call
+// Retrieves the results based on customQueryId which we pass dynamically in rest call
 [apiInstance putWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -2448,7 +2448,7 @@ namespace Example
 
             try
             {
-                // it will  get the results based on customQueryId which we pass dynamically in rest call
+                // Retrieves the results based on customQueryId which we pass dynamically in rest call
                 apiInstance.put(body, token);
             }
             catch (Exception e)
@@ -2507,7 +2507,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # it will  get the results based on customQueryId which we pass dynamically in rest call
+    # Retrieves the results based on customQueryId which we pass dynamically in rest call
     api_instance.put(body, token)
 except ApiException as e:
     print("Exception when calling CustomQueriesUpdateApi->put: %s\n" % e)</code></pre>
@@ -2627,7 +2627,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/m/data/odd/1?id&#x3D;2,5</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/m/data/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -2647,7 +2647,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-DataOrdering-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/m/data/odd/1?id&#x3D;2,5"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/m/data/{table_name}/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-DataOrdering-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2878,7 +2878,7 @@ except ApiException as e:
                       <article id="api-Dbform-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>To be generate dynamic form for specified table</p>
+                          <p>Generates dynamic form for specified table</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -2886,7 +2886,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/form/sample1</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/form/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -2906,7 +2906,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Dbform-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/form/sample1"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/form/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Dbform-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -2959,7 +2959,7 @@ public class DbformApiExample {
 
 DbformApi *apiInstance = [[DbformApi alloc] init];
 
-// To be generate dynamic form for specified table
+// Generates dynamic form for specified table
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -3010,7 +3010,7 @@ namespace Example
 
             try
             {
-                // To be generate dynamic form for specified table
+                // Generates dynamic form for specified table
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -3066,7 +3066,7 @@ api_instance = swagger_client.DbformApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To be generate dynamic form for specified table
+    # Generates dynamic form for specified table
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling DbformApi->get: %s\n" % e)</code></pre>
@@ -3145,7 +3145,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/m/default/data/domain_default_data</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/m/default/data/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -3165,7 +3165,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-DefaultData-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/m/default/data/domain_default_data"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/m/default/data/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-DefaultData-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -3396,7 +3396,7 @@ except ApiException as e:
                       <article id="api-DeleteCustomEntity-delete-0" data-group="User" data-name="delete" data-version="0">
                         <div class="pull-left">
                           <h1>delete</h1>
-                          <p>To delete custom entity</p>
+                          <p>Deletes the data from custom field entity table for a particular id</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -3404,7 +3404,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/cf/contac/7</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/cf/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -3424,7 +3424,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-DeleteCustomEntity-delete-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "https://dbapp.500apps.com/v2/cf/contac/7"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "https://dbapp.500apps.com/v2/cf/{table_name}/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-DeleteCustomEntity-delete-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -3477,7 +3477,7 @@ public class DeleteCustomEntityApiExample {
 
 DeleteCustomEntityApi *apiInstance = [[DeleteCustomEntityApi alloc] init];
 
-// To delete custom entity
+// Deletes the data from custom field entity table for a particular id
 [apiInstance deleteWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -3528,7 +3528,7 @@ namespace Example
 
             try
             {
-                // To delete custom entity
+                // Deletes the data from custom field entity table for a particular id
                 apiInstance.delete(token);
             }
             catch (Exception e)
@@ -3584,7 +3584,7 @@ api_instance = swagger_client.DeleteCustomEntityApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To delete custom entity
+    # Deletes the data from custom field entity table for a particular id
     api_instance.delete(token)
 except ApiException as e:
     print("Exception when calling DeleteCustomEntityApi->delete: %s\n" % e)</code></pre>
@@ -3655,7 +3655,7 @@ except ApiException as e:
                       <article id="api-DeleteData-delete-0" data-group="User" data-name="delete" data-version="0">
                         <div class="pull-left">
                           <h1>delete</h1>
-                          <p>To delete data</p>
+                          <p>Deletes the data from table</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -3663,7 +3663,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -3683,7 +3683,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-DeleteData-delete-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "https://dbapp.500apps.com/v2/ticket?id="</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "https://dbapp.500apps.com/v2/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-DeleteData-delete-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -3699,10 +3699,9 @@ public class DeleteDataApiExample {
     public static void main(String[] args) {
         
         DeleteDataApi apiInstance = new DeleteDataApi();
-        String id = id_example; // String | 
         String token = token_example; // String | an authorization header
         try {
-            apiInstance.delete(id, token);
+            apiInstance.delete(token);
         } catch (ApiException e) {
             System.err.println("Exception when calling DeleteDataApi#delete");
             e.printStackTrace();
@@ -3718,10 +3717,9 @@ public class DeleteDataApiExample {
 
     public static void main(String[] args) {
         DeleteDataApi apiInstance = new DeleteDataApi();
-        String id = id_example; // String | 
         String token = token_example; // String | an authorization header
         try {
-            apiInstance.delete(id, token);
+            apiInstance.delete(token);
         } catch (ApiException e) {
             System.err.println("Exception when calling DeleteDataApi#delete");
             e.printStackTrace();
@@ -3734,14 +3732,12 @@ public class DeleteDataApiExample {
   <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
   </div> -->
                             <div class="tab-pane" id="examples-DeleteData-delete-0-objc">
-                              <pre class="prettyprint"><code class="language-cpp">String *id = id_example; // 
-String *token = token_example; // an authorization header
+                              <pre class="prettyprint"><code class="language-cpp">String *token = token_example; // an authorization header
 
 DeleteDataApi *apiInstance = [[DeleteDataApi alloc] init];
 
-// To delete data
-[apiInstance deleteWith:id
-    token:token
+// Deletes the data from table
+[apiInstance deleteWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
@@ -3755,8 +3751,6 @@ DeleteDataApi *apiInstance = [[DeleteDataApi alloc] init];
 
 var api = new DbApp.DeleteDataApi()
 
-var id = id_example; // {String} 
-
 var token = token_example; // {String} an authorization header
 
 
@@ -3767,7 +3761,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-api.delete(id, token, callback);
+api.delete(token, callback);
 </code></pre>
                             </div>
 
@@ -3789,13 +3783,12 @@ namespace Example
         {
             
             var apiInstance = new DeleteDataApi();
-            var id = id_example;  // String | 
             var token = token_example;  // String | an authorization header
 
             try
             {
-                // To delete data
-                apiInstance.delete(id, token);
+                // Deletes the data from table
+                apiInstance.delete(token);
             }
             catch (Exception e)
             {
@@ -3812,11 +3805,10 @@ namespace Example
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new Swagger\Client\Api\DeleteDataApi();
-$id = id_example; // String | 
 $token = token_example; // String | an authorization header
 
 try {
-    $api_instance->delete($id, $token);
+    $api_instance->delete($token);
 } catch (Exception $e) {
     echo 'Exception when calling DeleteDataApi->delete: ', $e->getMessage(), PHP_EOL;
 }
@@ -3829,11 +3821,10 @@ use WWW::SwaggerClient::Configuration;
 use WWW::SwaggerClient::DeleteDataApi;
 
 my $api_instance = WWW::SwaggerClient::DeleteDataApi->new();
-my $id = id_example; # String | 
 my $token = token_example; # String | an authorization header
 
 eval { 
-    $api_instance->delete(id => $id, token => $token);
+    $api_instance->delete(token => $token);
 };
 if ($@) {
     warn "Exception when calling DeleteDataApi->delete: $@\n";
@@ -3849,12 +3840,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.DeleteDataApi()
-id = id_example # String | 
 token = token_example # String | an authorization header
 
 try: 
-    # To delete data
-    api_instance.delete(id, token)
+    # Deletes the data from table
+    api_instance.delete(token)
 except ApiException as e:
     print("Exception when calling DeleteDataApi->delete: %s\n" % e)</code></pre>
                             </div>
@@ -3896,33 +3886,6 @@ except ApiException as e:
 
 
 
-                            <div class="methodsubtabletitle">Query parameters</div>
-                            <table id="methodsubtable">
-                              <tr>
-                                <th width="150px">Name</th>
-                                <th>Description</th>
-                              </tr>
-                                <tr><td style="width:150px;">id*</td>
-<td>
-
-
-    <div id="d2e199_delete_id">
-        <div class="json-schema-view">
-            <div class="primitive">
-                <span class="type">
-                    String
-                </span>
-
-            </div>
-                <div class="inner required">
-                    Required
-                </div>
-        </div>
-    </div>
-</td>
-</tr>
-
-                            </table>
 
                           <h2>Responses</h2>
                             <h3> Status: 200 - Successful response. </h3>
@@ -3951,7 +3914,7 @@ except ApiException as e:
                       <article id="api-DeleteTagEntity-delete-0" data-group="User" data-name="delete" data-version="0">
                         <div class="pull-left">
                           <h1>delete</h1>
-                          <p>To delete tag entity.</p>
+                          <p>Deletes data related to entities.</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -3959,7 +3922,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/tags/contact/2?ids&#x3D;7</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="delete"><code><span class="pln">/tags/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -3979,7 +3942,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-DeleteTagEntity-delete-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "https://dbapp.500apps.com/v2/tags/contact/2?ids&#x3D;7?ids="</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X DELETE "https://dbapp.500apps.com/v2/tags/{table_name}/{entity_id}?ids="</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-DeleteTagEntity-delete-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -4035,7 +3998,7 @@ String *token = token_example; // an authorization header
 
 DeleteTagEntityApi *apiInstance = [[DeleteTagEntityApi alloc] init];
 
-// To delete tag entity.
+// Deletes data related to entities.
 [apiInstance deleteWith:ids
     token:token
               completionHandler: ^(NSError* error) {
@@ -4090,7 +4053,7 @@ namespace Example
 
             try
             {
-                // To delete tag entity.
+                // Deletes data related to entities.
                 apiInstance.delete(ids, token);
             }
             catch (Exception e)
@@ -4149,7 +4112,7 @@ ids = ids_example # String |
 token = token_example # String | an authorization header
 
 try: 
-    # To delete tag entity.
+    # Deletes data related to entities.
     api_instance.delete(ids, token)
 except ApiException as e:
     print("Exception when calling DeleteTagEntityApi->delete: %s\n" % e)</code></pre>
@@ -4247,7 +4210,7 @@ except ApiException as e:
                       <article id="api-Filters-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>This is used to specify various filter criteria and retrieve the data from several tables</p>
+                          <p>Retrieves data based on various filter criterias</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -4331,7 +4294,7 @@ String *token = token_example; // an authorization header
 
 FiltersApi *apiInstance = [[FiltersApi alloc] init];
 
-// This is used to specify various filter criteria and retrieve the data from several tables
+// Retrieves data based on various filter criterias
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -4386,7 +4349,7 @@ namespace Example
 
             try
             {
-                // This is used to specify various filter criteria and retrieve the data from several tables
+                // Retrieves data based on various filter criterias
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -4445,7 +4408,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # This is used to specify various filter criteria and retrieve the data from several tables
+    # Retrieves data based on various filter criterias
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling FiltersApi->post: %s\n" % e)</code></pre>
@@ -4557,7 +4520,7 @@ $(document).ready(function() {
                       <article id="api-FunnelChart-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>to achieve funnel chart</p>
+                          <p>Retrieves the data according to Funnel chart</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -4641,7 +4604,7 @@ String *token = token_example; // an authorization header
 
 FunnelChartApi *apiInstance = [[FunnelChartApi alloc] init];
 
-// to achieve funnel chart
+// Retrieves the data according to Funnel chart
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -4696,7 +4659,7 @@ namespace Example
 
             try
             {
-                // to achieve funnel chart
+                // Retrieves the data according to Funnel chart
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -4755,7 +4718,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # to achieve funnel chart
+    # Retrieves the data according to Funnel chart
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling FunnelChartApi->post: %s\n" % e)</code></pre>
@@ -4867,7 +4830,7 @@ $(document).ready(function() {
                       <article id="api-Import-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>This is used for import data from csv file.</p>
+                          <p>Imports the data to table from csv file.</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -4875,7 +4838,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/m/import?file_name&#x3D;contact_import.csv&amp;bucket_name&#x3D;temptrash&amp;table_name&#x3D;staging_table</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/m/import</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -4895,7 +4858,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-Import-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/m/import?file_name&#x3D;contact_import.csv&amp;bucket_name&#x3D;temptrash&amp;table_name&#x3D;staging_table"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/m/import"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-Import-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -4951,7 +4914,7 @@ String *token = token_example; // an authorization header
 
 ImportApi *apiInstance = [[ImportApi alloc] init];
 
-// This is used for import data from csv file.
+// Imports the data to table from csv file.
 [apiInstance postWith:fields
     token:token
               completionHandler: ^(NSError* error) {
@@ -5006,7 +4969,7 @@ namespace Example
 
             try
             {
-                // This is used for import data from csv file.
+                // Imports the data to table from csv file.
                 apiInstance.post(fields, token);
             }
             catch (Exception e)
@@ -5065,7 +5028,7 @@ fields = fields_example # String |
 token = token_example # String | an authorization header
 
 try: 
-    # This is used for import data from csv file.
+    # Imports the data to table from csv file.
     api_instance.post(fields, token)
 except ApiException as e:
     print("Exception when calling ImportApi->post: %s\n" % e)</code></pre>
@@ -5163,7 +5126,7 @@ except ApiException as e:
                       <article id="api-InsertCustomField-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To insert custom field</p>
+                          <p>Adds new records to custom field entity tables</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -5171,7 +5134,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/cf/contact/11</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/cf/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -5191,7 +5154,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-InsertCustomField-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/cf/contact/11"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/cf/{table_name}/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-InsertCustomField-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -5247,7 +5210,7 @@ String *token = token_example; // an authorization header
 
 InsertCustomFieldApi *apiInstance = [[InsertCustomFieldApi alloc] init];
 
-// To insert custom field
+// Adds new records to custom field entity tables
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -5302,7 +5265,7 @@ namespace Example
 
             try
             {
-                // To insert custom field
+                // Adds new records to custom field entity tables
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -5361,7 +5324,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To insert custom field
+    # Adds new records to custom field entity tables
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling InsertCustomFieldApi->post: %s\n" % e)</code></pre>
@@ -5473,7 +5436,7 @@ $(document).ready(function() {
                       <article id="api-InsertData-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To insert data</p>
+                          <p>Adds a new record to the table</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -5481,7 +5444,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -5501,7 +5464,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-InsertData-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/ticket"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-InsertData-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -5557,7 +5520,7 @@ String *token = token_example; // an authorization header
 
 InsertDataApi *apiInstance = [[InsertDataApi alloc] init];
 
-// To insert data
+// Adds a new record to the table
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -5612,7 +5575,7 @@ namespace Example
 
             try
             {
-                // To insert data
+                // Adds a new record to the table
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -5671,7 +5634,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To insert data
+    # Adds a new record to the table
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling InsertDataApi->post: %s\n" % e)</code></pre>
@@ -5783,7 +5746,7 @@ $(document).ready(function() {
                       <article id="api-InsertTagEntity-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To insert tag entity.</p>
+                          <p>Adds a tag to entities.</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -5791,7 +5754,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/tags/contact/5</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/tags/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -5811,7 +5774,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-InsertTagEntity-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/tags/contact/5"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/tags/{table_name}/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-InsertTagEntity-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -5867,7 +5830,7 @@ String *token = token_example; // an authorization header
 
 InsertTagEntityApi *apiInstance = [[InsertTagEntityApi alloc] init];
 
-// To insert tag entity.
+// Adds a tag to entities.
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -5922,7 +5885,7 @@ namespace Example
 
             try
             {
-                // To insert tag entity.
+                // Adds a tag to entities.
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -5981,7 +5944,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To insert tag entity.
+    # Adds a tag to entities.
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling InsertTagEntityApi->post: %s\n" % e)</code></pre>
@@ -6093,7 +6056,7 @@ $(document).ready(function() {
                       <article id="api-Joins-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To joining multiple tables and get records</p>
+                          <p>Retrieves data from more than one table using joins</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -6177,7 +6140,7 @@ String *token = token_example; // an authorization header
 
 JoinsApi *apiInstance = [[JoinsApi alloc] init];
 
-// To joining multiple tables and get records
+// Retrieves data from more than one table using joins
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -6232,7 +6195,7 @@ namespace Example
 
             try
             {
-                // To joining multiple tables and get records
+                // Retrieves data from more than one table using joins
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -6291,7 +6254,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To joining multiple tables and get records
+    # Retrieves data from more than one table using joins
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling JoinsApi->post: %s\n" % e)</code></pre>
@@ -6403,7 +6366,7 @@ $(document).ready(function() {
                       <article id="api-LineChart-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>to achieve line chart</p>
+                          <p>Retrieves the data according to Line chart</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -6487,7 +6450,7 @@ String *token = token_example; // an authorization header
 
 LineChartApi *apiInstance = [[LineChartApi alloc] init];
 
-// to achieve line chart
+// Retrieves the data according to Line chart
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -6542,7 +6505,7 @@ namespace Example
 
             try
             {
-                // to achieve line chart
+                // Retrieves the data according to Line chart
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -6601,7 +6564,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # to achieve line chart
+    # Retrieves the data according to Line chart
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling LineChartApi->post: %s\n" % e)</code></pre>
@@ -6713,7 +6676,7 @@ $(document).ready(function() {
                       <article id="api-MergeDuplicates-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To delete duplicate data from table</p>
+                          <p>Deletes duplicate records from table based on specified column</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -6721,7 +6684,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/m/md/sample/name</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/m/md/{table_name}/{field_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -6741,7 +6704,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-MergeDuplicates-post-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/m/md/sample/name"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X POST "https://dbapp.500apps.com/v2/m/md/{table_name}/{field_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-MergeDuplicates-post-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -6794,7 +6757,7 @@ public class MergeDuplicatesApiExample {
 
 MergeDuplicatesApi *apiInstance = [[MergeDuplicatesApi alloc] init];
 
-// To delete duplicate data from table
+// Deletes duplicate records from table based on specified column
 [apiInstance postWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -6845,7 +6808,7 @@ namespace Example
 
             try
             {
-                // To delete duplicate data from table
+                // Deletes duplicate records from table based on specified column
                 apiInstance.post(token);
             }
             catch (Exception e)
@@ -6901,7 +6864,7 @@ api_instance = swagger_client.MergeDuplicatesApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To delete duplicate data from table
+    # Deletes duplicate records from table based on specified column
     api_instance.post(token)
 except ApiException as e:
     print("Exception when calling MergeDuplicatesApi->post: %s\n" % e)</code></pre>
@@ -6972,7 +6935,7 @@ except ApiException as e:
                       <article id="api-PieChart-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>to achieve pie chart</p>
+                          <p>Retrieves the data according to Pie chart</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -7056,7 +7019,7 @@ String *token = token_example; // an authorization header
 
 PieChartApi *apiInstance = [[PieChartApi alloc] init];
 
-// to achieve pie chart
+// Retrieves the data according to Pie chart
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -7111,7 +7074,7 @@ namespace Example
 
             try
             {
-                // to achieve pie chart
+                // Retrieves the data according to Pie chart
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -7170,7 +7133,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # to achieve pie chart
+    # Retrieves the data according to Pie chart
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling PieChartApi->post: %s\n" % e)</code></pre>
@@ -7282,7 +7245,7 @@ $(document).ready(function() {
                       <article id="api-Preview-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To get the query</p>
+                          <p>Shows the actual query formed</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -7366,7 +7329,7 @@ String *token = token_example; // an authorization header
 
 PreviewApi *apiInstance = [[PreviewApi alloc] init];
 
-// To get the query
+// Shows the actual query formed
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -7421,7 +7384,7 @@ namespace Example
 
             try
             {
-                // To get the query
+                // Shows the actual query formed
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -7480,7 +7443,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To get the query
+    # Shows the actual query formed
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling PreviewApi->post: %s\n" % e)</code></pre>
@@ -7592,7 +7555,7 @@ $(document).ready(function() {
                       <article id="api-ReadFunction-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>Get aggregate data</p>
+                          <p>Retrieves the aggregate data</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -7600,7 +7563,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/aggregate/ticket/avg?aggregate_field&#x3D;id&amp;fields&#x3D;type&amp;group_by&#x3D;type</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/aggregate/{table_name}/{aggregate}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -7620,7 +7583,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-ReadFunction-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/aggregate/ticket/avg?aggregate_field&#x3D;id&amp;fields&#x3D;type&amp;group_by&#x3D;type"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/aggregate/{table_name}/{aggregate}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-ReadFunction-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -7673,7 +7636,7 @@ public class ReadFunctionApiExample {
 
 ReadFunctionApi *apiInstance = [[ReadFunctionApi alloc] init];
 
-// Get aggregate data
+// Retrieves the aggregate data
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -7724,7 +7687,7 @@ namespace Example
 
             try
             {
-                // Get aggregate data
+                // Retrieves the aggregate data
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -7780,7 +7743,7 @@ api_instance = swagger_client.ReadFunctionApi()
 token = token_example # String | an authorization header
 
 try: 
-    # Get aggregate data
+    # Retrieves the aggregate data
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling ReadFunctionApi->get: %s\n" % e)</code></pre>
@@ -7851,7 +7814,7 @@ except ApiException as e:
                       <article id="api-RetrieveCustomEntity-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>To retrieve custom entity</p>
+                          <p>Retrieves data from custom field entity</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -7859,7 +7822,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/cf/contact</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/cf/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -7879,7 +7842,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-RetrieveCustomEntity-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/cf/contact"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/cf/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-RetrieveCustomEntity-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -7932,7 +7895,7 @@ public class RetrieveCustomEntityApiExample {
 
 RetrieveCustomEntityApi *apiInstance = [[RetrieveCustomEntityApi alloc] init];
 
-// To retrieve custom entity
+// Retrieves data from custom field entity
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -7983,7 +7946,7 @@ namespace Example
 
             try
             {
-                // To retrieve custom entity
+                // Retrieves data from custom field entity
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -8039,7 +8002,7 @@ api_instance = swagger_client.RetrieveCustomEntityApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To retrieve custom entity
+    # Retrieves data from custom field entity
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling RetrieveCustomEntityApi->get: %s\n" % e)</code></pre>
@@ -8110,7 +8073,7 @@ except ApiException as e:
                       <article id="api-RetrieveData-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>To retrieve data</p>
+                          <p>Retrieves the required data from table</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -8118,7 +8081,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -8138,7 +8101,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-RetrieveData-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/ticket"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-RetrieveData-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -8191,7 +8154,7 @@ public class RetrieveDataApiExample {
 
 RetrieveDataApi *apiInstance = [[RetrieveDataApi alloc] init];
 
-// To retrieve data
+// Retrieves the required data from table
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -8242,7 +8205,7 @@ namespace Example
 
             try
             {
-                // To retrieve data
+                // Retrieves the required data from table
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -8298,7 +8261,7 @@ api_instance = swagger_client.RetrieveDataApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To retrieve data
+    # Retrieves the required data from table
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling RetrieveDataApi->get: %s\n" % e)</code></pre>
@@ -8369,7 +8332,7 @@ except ApiException as e:
                       <article id="api-RetrieveSingle-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>To retrieve single record</p>
+                          <p>Retrieves a single record</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -8377,7 +8340,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/ticket/{id}</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -8397,7 +8360,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-RetrieveSingle-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/ticket/{id}"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/{table_name}/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-RetrieveSingle-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -8453,7 +8416,7 @@ String *token = token_example; // an authorization header
 
 RetrieveSingleApi *apiInstance = [[RetrieveSingleApi alloc] init];
 
-// To retrieve single record
+// Retrieves a single record
 [apiInstance getWith:id
     token:token
               completionHandler: ^(NSError* error) {
@@ -8508,7 +8471,7 @@ namespace Example
 
             try
             {
-                // To retrieve single record
+                // Retrieves a single record
                 apiInstance.get(id, token);
             }
             catch (Exception e)
@@ -8567,7 +8530,7 @@ id = id_example # String |
 token = token_example # String | an authorization header
 
 try: 
-    # To retrieve single record
+    # Retrieves a single record
     api_instance.get(id, token)
 except ApiException as e:
     print("Exception when calling RetrieveSingleApi->get: %s\n" % e)</code></pre>
@@ -8665,7 +8628,7 @@ except ApiException as e:
                       <article id="api-RetrieveTag-get-0" data-group="User" data-name="get" data-version="0">
                         <div class="pull-left">
                           <h1>get</h1>
-                          <p>To retrieve tag entity.</p>
+                          <p>Retrieves data related to partic entities.</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -8673,7 +8636,7 @@ except ApiException as e:
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/tags/contact?tag_name&#x3D;Team&amp;fields&#x3D;first_name,last_name,email</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="get"><code><span class="pln">/tags/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -8693,7 +8656,7 @@ except ApiException as e:
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-RetrieveTag-get-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/tags/contact?tag_name&#x3D;Team&amp;fields&#x3D;first_name,last_name,email"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X GET "https://dbapp.500apps.com/v2/tags/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-RetrieveTag-get-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -8746,7 +8709,7 @@ public class RetrieveTagApiExample {
 
 RetrieveTagApi *apiInstance = [[RetrieveTagApi alloc] init];
 
-// To retrieve tag entity.
+// Retrieves data related to partic entities.
 [apiInstance getWith:token
               completionHandler: ^(NSError* error) {
                             if (error) {
@@ -8797,7 +8760,7 @@ namespace Example
 
             try
             {
-                // To retrieve tag entity.
+                // Retrieves data related to partic entities.
                 apiInstance.get(token);
             }
             catch (Exception e)
@@ -8853,7 +8816,7 @@ api_instance = swagger_client.RetrieveTagApi()
 token = token_example # String | an authorization header
 
 try: 
-    # To retrieve tag entity.
+    # Retrieves data related to partic entities.
     api_instance.get(token)
 except ApiException as e:
     print("Exception when calling RetrieveTagApi->get: %s\n" % e)</code></pre>
@@ -8924,7 +8887,7 @@ except ApiException as e:
                       <article id="api-Search-post-0" data-group="User" data-name="post" data-version="0">
                         <div class="pull-left">
                           <h1>post</h1>
-                          <p>To search data from table</p>
+                          <p>Retrieves searched data from table</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -9008,7 +8971,7 @@ String *token = token_example; // an authorization header
 
 SearchApi *apiInstance = [[SearchApi alloc] init];
 
-// To search data from table
+// Retrieves searched data from table
 [apiInstance postWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -9063,7 +9026,7 @@ namespace Example
 
             try
             {
-                // To search data from table
+                // Retrieves searched data from table
                 apiInstance.post(body, token);
             }
             catch (Exception e)
@@ -9122,7 +9085,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To search data from table
+    # Retrieves searched data from table
     api_instance.post(body, token)
 except ApiException as e:
     print("Exception when calling SearchApi->post: %s\n" % e)</code></pre>
@@ -9234,7 +9197,7 @@ $(document).ready(function() {
                       <article id="api-UpdateCustomField-put-0" data-group="User" data-name="put" data-version="0">
                         <div class="pull-left">
                           <h1>put</h1>
-                          <p>To update custom field</p>
+                          <p>Updates the existing data in custom field entity for a particular id</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -9242,7 +9205,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/cf/contact/7</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/cf/{table_name}/{entity_id}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -9262,7 +9225,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-UpdateCustomField-put-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/cf/contact/7"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/cf/{table_name}/{entity_id}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-UpdateCustomField-put-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -9318,7 +9281,7 @@ String *token = token_example; // an authorization header
 
 UpdateCustomFieldApi *apiInstance = [[UpdateCustomFieldApi alloc] init];
 
-// To update custom field
+// Updates the existing data in custom field entity for a particular id
 [apiInstance putWith:body
     token:token
               completionHandler: ^(NSError* error) {
@@ -9373,7 +9336,7 @@ namespace Example
 
             try
             {
-                // To update custom field
+                // Updates the existing data in custom field entity for a particular id
                 apiInstance.put(body, token);
             }
             catch (Exception e)
@@ -9432,7 +9395,7 @@ body = 56 # Integer |
 token = token_example # String | an authorization header
 
 try: 
-    # To update custom field
+    # Updates the existing data in custom field entity for a particular id
     api_instance.put(body, token)
 except ApiException as e:
     print("Exception when calling UpdateCustomFieldApi->put: %s\n" % e)</code></pre>
@@ -9544,7 +9507,7 @@ $(document).ready(function() {
                       <article id="api-UpdateData-put-0" data-group="User" data-name="put" data-version="0">
                         <div class="pull-left">
                           <h1>put</h1>
-                          <p>To update data</p>
+                          <p>Updates the existing data in the table</p>
                         </div>
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
@@ -9552,7 +9515,7 @@ $(document).ready(function() {
                         <p class="marked"></p>
                         <p></p>
                         <br />
-                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/ticket</span></code></pre>
+                        <pre class="prettyprint language-html prettyprinted" data-type="put"><code><span class="pln">/{table_name}</span></code></pre>
                         <p>
                           <h3>Usage and SDK Samples</h3>
                         </p>
@@ -9572,7 +9535,7 @@ $(document).ready(function() {
 
                         <div class="tab-content">
                           <div class="tab-pane active" id="examples-UpdateData-put-0-curl">
-                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/ticket"</code></pre>
+                            <pre class="prettyprint"><code class="language-bsh">curl -X PUT "https://dbapp.500apps.com/v2/{table_name}"</code></pre>
                           </div>
                           <div class="tab-pane" id="examples-UpdateData-put-0-java">
                             <pre class="prettyprint"><code class="language-java">import io.swagger.client.*;
@@ -9634,7 +9597,7 @@ BigDecimal *contactId = 8.14; // a person contact number. (optional)
 
 UpdateDataApi *apiInstance = [[UpdateDataApi alloc] init];
 
-// To update data
+// Updates the existing data in the table
 [apiInstance putWith:id
     token:token
     requesterEmail:requesterEmail
@@ -9697,7 +9660,7 @@ namespace Example
 
             try
             {
-                // To update data
+                // Updates the existing data in the table
                 apiInstance.put(id, token, requesterEmail, contactId);
             }
             catch (Exception e)
@@ -9762,7 +9725,7 @@ requesterEmail = requesterEmail_example # String | It's name field. (optional)
 contactId = 8.14 # BigDecimal | a person contact number. (optional)
 
 try: 
-    # To update data
+    # Updates the existing data in the table
     api_instance.put(id, token, requesterEmail=requesterEmail, contactId=contactId)
 except ApiException as e:
     print("Exception when calling UpdateDataApi->put: %s\n" % e)</code></pre>
